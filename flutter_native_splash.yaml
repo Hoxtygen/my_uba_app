@@ -1,0 +1,16 @@
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/ub_bg.png
+  color_dark: "#121212"
+  image_dart: assets/images/ub_bg.png
+  android: true
+  ios: true
+  fullscreen: true
+
+  android_12:
+    image: assets/images/ub_bg.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/images/ub_bg.png
+    icon_background_color_dark: "#121212"
+
+  web: false
