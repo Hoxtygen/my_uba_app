@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_uba_app/screens/top_up.dart';
 
 class QuickActions extends StatelessWidget {
   const QuickActions({Key? key}) : super(key: key);
@@ -32,9 +33,16 @@ class QuickActions extends StatelessWidget {
                 color: Colors.white70,
                 borderRadius: BorderRadius.circular(50),
               ),
-              child: const Icon(
-                Icons.insert_drive_file_rounded,
-                color: Colors.black,
+              child: IconButton(
+                icon: const Icon(Icons.insert_drive_file_rounded),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return const TopUpScreen();
+                    }),
+                  );
+                },
               ),
             ),
             const SizedBox(
